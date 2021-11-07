@@ -88,10 +88,12 @@ function PlayerTurns(){
 
     }else if (turn % 3 === 1){
         SpecificTurn = Player2;
+        SpecificScore = p2score;
         alert("It is " + Player2 + "'s turn");
 
     }else if (turn % 3 === 2){
         SpecificTurn = Player3;
+        SpecificScore = p3score;
         alert("It is " + Player3 + "'s turn");
 
     }
