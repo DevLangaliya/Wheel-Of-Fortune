@@ -1,0 +1,54 @@
+h1 {
+    color: aliceblue;
+
+}
+body {
+    background-color: black;
+
+}
+#Player1 {
+    background-color: black;
+    color: white;
+
+}
+#Player2 {
+    background-color: black;
+    color: white;
+
+}
+#Player3 {
+    background-color: black;
+    color: white;
+
+}
+#score1 {
+    color: lightcoral;
+
+}
+#score2 {
+    color: lightseagreen;
+
+}
+#score3 {
+    color: lightskyblue;
+
+}
+#GimmeName{
+    background-color: black;
+    color: white;
+
+}
+#guess {
+    background-color: black;
+    color: white;
+
+}
+#SubmitName {
+    background-color: black;
+    color: white;
+
+}
+#Name {
+    color: white;
+
+}
