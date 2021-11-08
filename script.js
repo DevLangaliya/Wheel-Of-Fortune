@@ -49,7 +49,6 @@ function guess() {
     console.log(word)
     multiplier = 0;
     PlayerTurns();
-    alert("Spinning...");
     alert(SpecificTurn + " spun $" + letterValue + "!");
     if (allowSpin === false){
         document.getElementById("wheel").disabled = true;
