@@ -73,7 +73,7 @@ function guess() {
     //remove the used word form the "bank" array so it doesnt show up again
 
     alert (SpecificTurn + " got the word " + word + " correct!")
-    SpecificScore = multiplier * letterValue;
+    SpecificScore = (multiplier * letterValue) + SpecificScore;
     alert (SpecificTurn + " earned $" + SpecificScore + "!")
     showMoney();
     turn = turn + 1;
