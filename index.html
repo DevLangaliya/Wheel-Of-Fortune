@@ -11,24 +11,65 @@
 
 <body>
 
-    <h1>WELCOME TO WHEEL OF FORTUNE</h1>
+<h1>Welcome To Wheel Of Fortune</h1>
 
-    <p id="Name"></p>
-    <input type="button" id="GimmeName" onclick="TakeName()" value="less go"><br>
+<div class="mainbox" id="mainbox" style="display: none; float:right">
+    <div class="box" id="box">
+        <div class="box1">
+            <span class="font span1"><b>FREE SPACE</b></span>
+            <span class="font span2"><b>SKIP</b></span>
+            <span class="font span3"><b>$100</b></span>
+            <span class="font span4"><b>$200</b></span>
+            <span class="font span5"><b>$300</b></span>
+        </div>
+        <div class="box2">
+            <span class="font span1"><b>$400</b></span>
+            <span class="font span2"><b>$500</b></span>
+            <span class="font span3"><b>$600</b></span>
+            <span class="font span4"><b>SKIP</b></span>
+            <span class="font span5"><b>BANKRUPT</b></span>
+        </div>
+    </div>
+    <button class="spin" onclick="spin()">SPIN</button>
+</div><br>
 
-    <input type="text" id="Player1" style="display: none" value="Player 1"><br>
-    <input type="text" id="Player2" style="display: none" value="Player 2"><br>
-    <input type="text" id="Player3" style="display: none" value="Player 3"><br>
-    <input type="button" id="SubmitName" style="display: none" onclick="SubmitName()" value="Start Game"><br><br>
-    <input type="button" onclick="guess()" value="Spin and Guess" style="display: none" id="guess"><br><br><br>
+<input id="play" onclick="playMusic()" type="button" value="Play Music">
+<input id="pause" onclick="pauseMusic()" type="button" value="Pause Music" disabled><br>
 
-    <p id="score1" style="display: none"></p><br><br><br>
-    <p id="score2" style="display: none"></p><br><br><br>
+<p id="yo"></p><br>
+<p id="categories"></p>
+<p id="Name"></p>
+<p id="turns"></p>
+<p id="monies"></p>
+
+<div style="float:left">
+    <input id="switchName" onclick="changeNames()" style="display: none" type="button" value="Change Names"><br>
+    <input id="restartGame" onclick="restartGame()" style="display: none" type="button" value="Restart game">
+    <input id="confirmSwitch" onclick="confirmChange()" style="display: none" type="button" value="Confirm">
+    <p id="score1" style="display: none"></p>
+    <p id="score2" style="display: none"></p>
     <p id="score3" style="display: none"></p>
+</div><br><br>
 
-    <img src="https://wheel.familytech.byu.edu/images/wheel.png" alt="The Wheel" style="float:left; width:381px; height:381px;">
-    <img src="https://static.wikia.nocookie.net/southpark/images/1/1b/Pat-sajak.png" alt="The Host" style="width:145px; height:381px;">
+<input id="lastOne" onclick="finalPuzzle()" style="display: none" type="button" value="Final Puzzle"><br>
 
+<p id="lastHint"></p>
+
+<input id="GimmeName" onclick="TakeName()" type="button" value="Enter Names"><br><br>
+<input id="Player1" style="display: none" type="text" value="Player 1"><br>
+<input id="Player2" style="display: none" type="text" value="Player 2"><br>
+<input id="Player3" style="display: none" type="text" value="Player 3"><br>
+<input id="SubmitName" onclick="SubmitName()" style="display: none" type="button" value="Start Game"><br><br>
+<input id="guess" onclick="guessCon()" style="display: none" type="button" value="Guess Consonant"><br>
+<input id="guess2" onclick="guessVow()" style="display: none" type="button" value="Purchase a Vowel - $250"><br>
+<input id="fullSend" onclick="guessWholeWord()" style="display: none" type="button" value="Solve"><br>
+<input id="fullSend2" onclick="hailmary()" style="display: none" type="button" value="Solve"><br>
+<input id="newWord" onclick="showWord()" style="display: none" type="button" value="Give me a word">
+<input id="finalattempt" onclick="finalGuess()" style="display: none" type="button" value="Guess">
+
+<p id="lifeCounter"></p>
+<p id="usedLetters"></p>
+<p id="word"></p>
 
 </body>
 </html>
